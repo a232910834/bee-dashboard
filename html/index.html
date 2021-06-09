@@ -104,7 +104,7 @@
                     },
                     {
                         title: 'IP',
-                         key: 'iphide',
+                        key: 'iphide',
                         width: 145
                     },
                     {
@@ -268,7 +268,6 @@
         mounted() {
             axios.get('/MySwarm.conf').then(resp => {
                 let beesTempArrarr = resp.data.Swarm
-				 
                 beesTempArrarr.forEach(beesTemp => {
 				var ipsp=beesTemp.Server.split('.');
                     this.bees.push({
